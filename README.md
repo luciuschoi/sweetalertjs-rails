@@ -1,8 +1,8 @@
 # Sweetalertjs::Rails
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sweetalertjs/rails`. To experiment with that code, run `bin/console` for an interactive prompt.
+Sweet Alert : A BEAUTIFUL REPLACEMENT FOR JAVASCRIPT'S "ALERT"
 
-TODO: Delete this and the text above, and describe your gem
+This gem is wrapping sweetAlert.js for Rails integration
 
 ## Installation
 
@@ -22,13 +22,25 @@ Or install it yourself as:
 
 ## Usage
 
+In `app/assets/javascripts/application.js`, insert the following codeline:
+
 ```
 //=require sweetalert.min
 ```
 
+In `app/assets/stylesheets/application.scss`, insert the following codeline:
+
 ```
 @import 'sweetalert';
 ```
+
+And then, in javascript files, write 'swal()' function in proper position.
+
+```js
+swal("Here's a message!");
+```
+
+If you want more examples, refer to the sweetAlert website : http://t4t5.github.io/sweetalert/
 
 ## Development
 
